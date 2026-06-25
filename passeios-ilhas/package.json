@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node convert-images.js && node convert-videos.js",
     "build": "next build",
+    "prebuild:local": "node convert-images.js && node convert-videos.js",
+    "prebuild:netlify": "node convert-images.js",
     "start": "next start",
     "lint": "eslint"
   },
