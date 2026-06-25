@@ -1,7 +1,7 @@
 [build]
-  base = "PasseiosDeIlhas/passeios-ilhas"
+  base = "7d38ef3792fd42b2474089ec9133314861b87010/passeios-ilhas"
   command = "npm run build"
-  publish = "PasseiosDeIlhas/passeios-ilhas/.next"
+  publish = "7d38ef3792fd42b2474089ec9133314861b87010/passeios-ilhas/.next"
 
 [build.environment]
   NODE_VERSION = "20.10.0"
