@@ -70,7 +70,6 @@ export default function Home() {
         </motion.section>
       </div>
 
-
       {/* Storytelling Section */}
       <motion.section
         initial={{ opacity: 0, y: 50 }}
@@ -206,30 +205,63 @@ export default function Home() {
         >
           {/* Campo oculto obrigatório */}
           <input type="hidden" name="form-name" value="reserva" />
+
+          {/* Honeypot para evitar spam */}
           <p className="hidden">
             <label>
               Não preencha este campo: <input name="bot-field" />
             </label>
           </p>
 
-          <input type="text" name="nome" placeholder="Nome completo" required className="border rounded-lg px-4 py-3" />
-          <input type="email" name="email" placeholder="E-mail" required className="border rounded-lg px-4 py-3" />
-          <input type="tel" name="telefone" placeholder="Telefone" required className="border rounded-lg px-4 py-3" />
+          <input
+            type="text"
+            name="nome"
+            placeholder="Nome completo"
+            required
+            className="border rounded-lg px-4 py-3"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            required
+            className="border rounded-lg px-4 py-3"
+          />
+          <input
+            type="tel"
+            name="telefone"
+            placeholder="Telefone"
+            required
+            className="border rounded-lg px-4 py-3"
+          />
 
-          <select name="passeio" required className="border rounded-lg px-4 py-3">
+          <select
+            name="passeio"
+            required
+            className="border rounded-lg px-4 py-3"
+          >
             <option value="">Selecione o passeio</option>
             <option value="ilhas-cristalinas">Ilhas Cristalinas</option>
             <option value="conforto-exclusivo">Conforto Exclusivo</option>
             <option value="experiencia-personalizada">Experiência Personalizada</option>
           </select>
 
-          <textarea name="mensagem" placeholder="Mensagem ou observações" rows={4} className="border rounded-lg px-4 py-3"></textarea>
+          <textarea
+            name="mensagem"
+            placeholder="Mensagem ou observações"
+            rows={4}
+            className="border rounded-lg px-4 py-3"
+          ></textarea>
 
-          <button type="submit" className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+          <button
+            type="submit"
+            className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition"
+          >
             Enviar Reserva
           </button>
         </form>
       </motion.section>
+
 
       {/* Depoimentos */}
       <motion.section
