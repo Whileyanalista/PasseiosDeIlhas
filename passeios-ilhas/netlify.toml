@@ -9,7 +9,7 @@
   node_bundler = "esbuild"
 
 [[plugins]]
-  package = "@netlify/plugin-next.js"
+  package = "@netlify/plugin-nextjs"
 
 [[redirects]]
   from = "/sucesso"
