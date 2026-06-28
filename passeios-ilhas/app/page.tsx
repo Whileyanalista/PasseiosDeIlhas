@@ -75,8 +75,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -50 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.2 }}
         className="relative bg-black text-white"
       >
         {[
