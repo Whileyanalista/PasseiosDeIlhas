@@ -1,7 +1,7 @@
 [build]
   base = "passeios-ilhas"
   command = "npm run prebuild:netlify && npm run build"
-  publish = "./.next"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "20.10.0"
