@@ -13,6 +13,6 @@
   package = "@netlify/plugin-nextjs"
 
 [[redirects]]
-  from = "/sucesso"
+  from = "/*"
   to = "/sucesso"
   status = 200
