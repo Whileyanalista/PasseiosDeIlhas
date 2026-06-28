@@ -2,15 +2,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
 
-  // Otimização de imagens
   images: {
-    formats: ["image/avif", "image/webp"], // formatos modernos
-    minimumCacheTTL: 60 * 60 * 24 * 30, // cache de 30 dias
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 60 * 60 * 24 * 30,
   },
 
-  // Headers customizados para cache e compressão
   async headers() {
     return [
       {
@@ -18,19 +15,18 @@ const nextConfig = {
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, immutable", // cache longo
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },
     ];
   },
 
-  // Redirecionamentos (se quiser apontar CTAs para o formulário)
   async redirects() {
     return [
       {
         source: "/reserve",
-        destination: "/#reserva", // rola até o formulário
+        destination: "/#reserva",
         permanent: false,
       },
     ];
