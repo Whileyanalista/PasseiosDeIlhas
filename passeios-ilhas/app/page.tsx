@@ -75,7 +75,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.2 }}
+        transition={{ delay: 0.5, duration: 0.2 }}
         className="relative bg-black text-white"
       >
         {[
@@ -84,11 +84,7 @@ export default function Home() {
           { src: "../storytelling/ilha3", text: "Descubra o encanto das ilhas da Bahia" },
         ].map((item, index) => (
           <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ amount: 0.2 }}
+            key={index}            
             className="relative w-full h-screen flex items-center justify-center overflow-hidden"
           >
             <picture>
